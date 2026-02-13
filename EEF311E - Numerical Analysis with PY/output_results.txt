@@ -1,0 +1,7 @@
+The solution of the system by Jacobian Method:
+x0=0.7778
+x1=-0.1111
+
+The solution of the system by Gauss Elimination:
+x0=0.7778
+x1=-0.1111
