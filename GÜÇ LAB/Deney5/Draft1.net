@@ -1,0 +1,17 @@
+* C:\Users\HP\Desktop\Draft1.asc
+V1 N001 0 30V
+R1 0 N004 100
+Vgate N003 N004 5V
+R2 N002 0 {R_load}
+XU1 N001 N003 N002 X1
+.step param R_load list 72.5 36.25 24.16 18.12 14.5
+.tran 10m
+.subckt X1 A G K
+Q1 K N001 K 0 2N2222
+Q2 A N001 A 0 2N2907
+R_g G N001 10
+.model 2N2222 NPN
+.model 2N2907 PNP
+.ends
+.backanno
+.end
